@@ -31,3 +31,5 @@ tfplan*
 # Developer notes
 notes.txt
 #
+*.pem
+#
