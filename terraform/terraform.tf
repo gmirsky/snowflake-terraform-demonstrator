@@ -2,7 +2,7 @@ terraform {
   required_providers {
     snowflake = {
       source  = "Snowflake-Labs/snowflake"
-      version = "0.56.5"
+      version = "0.57.0"
     }
     tls = {
       source  = "hashicorp/tls"
