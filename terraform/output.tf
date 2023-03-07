@@ -16,10 +16,22 @@ output "snowflake_current_url" {
   sensitive   = false
 }
 #
+output "teraform_path_module" {
+  value = path.module
+}
+#
+output "terraform_path_root" {
+  value = path.root
+}
+#
+output "terraform_path_cwd" {
+  value = path.cwd
+}
+#
 output "snowflake_default_user_password" {
-  value = var.default_user_password
+  value       = var.default_user_password
   description = "Default user password for first log in"
-  sensitive = true
+  sensitive   = true
 }
 #
 output "dev_database_1_db_id" {
@@ -118,3 +130,18 @@ output "debug_database_1_db_wh_name" {
   sensitive   = false
 }
 #
+output "dev_user_01_name" {
+  value       = snowflake_user.dev_user_01[0].name
+  description = "Development user 01 name"
+  sensitive   = false
+}
+#
+output "dev_user_01_id" {
+  value       = snowflake_user.dev_user_01[0].id
+  description = "Development user 01 ID"
+  sensitive   = false
+}
+#
+# output "dev_database_1_db_schema_1_name" {
+#   value = snowflake_schema.dev_database_1_db_schema_1[0]
+# }
