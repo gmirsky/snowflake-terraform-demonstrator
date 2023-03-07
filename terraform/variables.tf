@@ -1,3 +1,38 @@
+variable "deploy_development" {
+  type        = bool
+  description = "Deploy development environment"
+  default     = false
+  sensitive   = false
+}
+#
+variable "deploy_qa" {
+  type        = bool
+  description = "Deploy QA environment"
+  default     = false
+  sensitive   = false
+}
+#
+variable "deploy_production" {
+  type        = bool
+  description = "Deploy production environment"
+  default     = false
+  sensitive   = false
+}
+#
+variable "deploy_debug" {
+  type        = bool
+  description = "Deploy production debug environment"
+  default     = false
+  sensitive   = false
+}
+#
+variable "database_name" {
+  type        = string
+  description = "Database name"
+  default     = "database_1"
+  sensitive   = false
+}
+#
 variable "rsa_key_file_directory_name" {
   type        = string
   description = "RSA key file directory name"
@@ -17,5 +52,11 @@ variable "rsa_bits" {
   description = "RSA key length"
   default     = 2048
   sensitive   = false
+}
+#
+variable "default_user_password" {
+  type        = string
+  description = "The default user password for first time log in."
+  sensitive   = true
 }
 #

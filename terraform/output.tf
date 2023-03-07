@@ -16,45 +16,105 @@ output "snowflake_current_url" {
   sensitive   = false
 }
 #
-output "database_database_1" {
-  value       = snowflake_database.database_1_db.id
-  description = "Name of the database created"
+output "snowflake_default_user_password" {
+  value = var.default_user_password
+  description = "Default user password for first log in"
+  sensitive = true
+}
+#
+output "dev_database_1_db_id" {
+  value       = snowflake_database.dev_database_1_db[0].id
+  description = "ID of the DEV database created"
   sensitive   = false
 }
 #
-output "role_database_1_db_rw_role" {
-  value       = snowflake_role.database_1_db_rw_role.id
-  description = "Name of the role created"
+output "qa_database_1_db_id" {
+  value       = snowflake_database.qa_database_1_db[0].id
+  description = "ID of the QA database created"
   sensitive   = false
 }
 #
-output "role_database_1_db_ro_role" {
-  value       = snowflake_role.database_1_db_ro_role.id
-  description = "Name of the role created"
+output "prod_database_1_db_id" {
+  value       = snowflake_database.prod_database_1_db[0].id
+  description = "ID of the PROD database created"
   sensitive   = false
 }
 #
-output "warehouse_dba_wh" {
-  value       = snowflake_warehouse.dba_wh.id
-  description = "Name of the warehouse created"
+output "debug_database_1_db_id" {
+  value       = snowflake_database.debug_database_1_db[0].id
+  description = "ID of the Debug database created"
   sensitive   = false
 }
 #
-output "database_1_db_wh" {
-  value       = snowflake_warehouse.database_1_db_wh.id
-  description = "Name of the warehouse created"
+output "dev_database_1_db_name" {
+  value       = snowflake_database.dev_database_1_db[0].name
+  description = "Name of the DEV database created"
   sensitive   = false
 }
 #
-output "resource_monitor_dba_wh_rm" {
-  value       = snowflake_resource_monitor.dba_wh_rm.id
-  description = "Name of the resource monitor created"
+output "qa_database_1_db_name" {
+  value       = snowflake_database.qa_database_1_db[0].name
+  description = "Name of the QA database created"
   sensitive   = false
 }
 #
-output "resource_monitor_database_1_db_wh_rm" {
-  value       = snowflake_resource_monitor.database_1_db_wh_rm.id
-  description = "Name of the resource monitor created"
+output "prod_database_1_db_name" {
+  value       = snowflake_database.prod_database_1_db[0].name
+  description = "Name of the PROD database created"
+  sensitive   = false
+}
+#
+output "debug_database_1_db_name" {
+  value       = snowflake_database.debug_database_1_db[0].name
+  description = "Name of the Debug database created"
+  sensitive   = false
+}
+#
+output "dev_database_1_db_wh_id" {
+  value       = snowflake_warehouse.dev_database_1_db_wh[0].id
+  description = "ID of the DEV database warehouse created"
+  sensitive   = false
+}
+#
+output "dev_database_1_db_wh_name" {
+  value       = snowflake_warehouse.dev_database_1_db_wh[0].name
+  description = "Name of the DEV database warehouse created"
+  sensitive   = false
+}
+#
+output "qa_database_1_db_wh_id" {
+  value       = snowflake_warehouse.qa_database_1_db_wh[0].id
+  description = "ID of the QA database warehouse created"
+  sensitive   = false
+}
+#
+output "qa_database_1_db_wh_name" {
+  value       = snowflake_warehouse.qa_database_1_db_wh[0].name
+  description = "Name of the QA database warehouse created"
+  sensitive   = false
+}
+#
+output "prod_database_1_db_wh_id" {
+  value       = snowflake_warehouse.prod_database_1_db_wh[0].id
+  description = "ID of the PROD database warehouse created"
+  sensitive   = false
+}
+#
+output "prod_database_1_db_wh_name" {
+  value       = snowflake_warehouse.prod_database_1_db_wh[0].name
+  description = "Name of the PROD database warehouse created"
+  sensitive   = false
+}
+#
+output "debug_database_1_db_wh_id" {
+  value       = snowflake_warehouse.debug_database_1_db_wh[0].id
+  description = "ID of the DEBUG database warehouse created"
+  sensitive   = false
+}
+#
+output "debug_database_1_db_wh_name" {
+  value       = snowflake_warehouse.debug_database_1_db_wh[0].name
+  description = "Name of the DEBUG database warehouse created"
   sensitive   = false
 }
 #
