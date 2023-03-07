@@ -16,3 +16,45 @@ output "snowflake_current_url" {
   sensitive   = false
 }
 #
+output "database_database_1" {
+  value       = snowflake_database.database_1_db.id
+  description = "Name of the database created"
+  sensitive   = false
+}
+#
+output "role_database_1_db_rw_role" {
+  value       = snowflake_role.database_1_db_rw_role.id
+  description = "Name of the role created"
+  sensitive   = false
+}
+#
+output "role_database_1_db_ro_role" {
+  value       = snowflake_role.database_1_db_ro_role.id
+  description = "Name of the role created"
+  sensitive   = false
+}
+#
+output "warehouse_dba_wh" {
+  value       = snowflake_warehouse.dba_wh.id
+  description = "Name of the warehouse created"
+  sensitive   = false
+}
+#
+output "database_1_db_wh" {
+  value       = snowflake_warehouse.database_1_db_wh.id
+  description = "Name of the warehouse created"
+  sensitive   = false
+}
+#
+output "resource_monitor_dba_wh_rm" {
+  value       = snowflake_resource_monitor.dba_wh_rm.id
+  description = "Name of the resource monitor created"
+  sensitive   = false
+}
+#
+output "resource_monitor_database_1_db_wh_rm" {
+  value       = snowflake_resource_monitor.database_1_db_wh_rm.id
+  description = "Name of the resource monitor created"
+  sensitive   = false
+}
+#
