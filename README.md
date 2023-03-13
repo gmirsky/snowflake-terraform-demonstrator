@@ -1,7 +1,5 @@
-# snowflake-terraform-demonstrator
+# Snowflake Terraform Demonstrator
 
-Snowflake Database Terraform Demonstrator
+A simple Snowflake Terraform demonstrator.
 
-DO NOT USE
-
-Work halted due to the instability of the Snowflake provider giving inconsistent results between Azure and AWS.
+This repository is still be developed.
