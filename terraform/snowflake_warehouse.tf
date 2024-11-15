@@ -14,7 +14,6 @@ resource "snowflake_warehouse" "dba_wh" {
   scaling_policy                      = "ECONOMY" #STANDARD|ECONOMY
   statement_queued_timeout_in_seconds = 0         #valid values any integer 0 or greater, or NULL; default is 0
   statement_timeout_in_seconds        = 172800    #valid values are 0 to 604800 (7 days); default is 172800 (2 days)
-  wait_for_provisioning               = true
   warehouse_size                      = "XSMALL"   #XSMALL|SMALL|MEDIUM|LARGE|XLARGE|XXLARGE|XXXLARGE|X4LARGE|X5LARGE|X6LARGE
   warehouse_type                      = "STANDARD" #STANDARD|SNOWPARK-OPTIMIZED
 }
@@ -36,7 +35,6 @@ resource "snowflake_warehouse" "dev_database_1_db_wh" {
   scaling_policy                      = "ECONOMY" #STANDARD|ECONOMY
   statement_queued_timeout_in_seconds = 0         #valid values any integer 0 or greater, or NULL; default is 0
   statement_timeout_in_seconds        = 172800    #valid values are 0 to 604800 (7 days); default is 172800 (2 days)
-  wait_for_provisioning               = true
   warehouse_size                      = "XSMALL"   #XSMALL|SMALL|MEDIUM|LARGE|XLARGE|XXLARGE|XXXLARGE|X4LARGE|X5LARGE|X6LARGE
   warehouse_type                      = "STANDARD" #STANDARD|SNOWPARK-OPTIMIZED
 }
@@ -58,7 +56,6 @@ resource "snowflake_warehouse" "qa_database_1_db_wh" {
   scaling_policy                      = "ECONOMY" #STANDARD|ECONOMY
   statement_queued_timeout_in_seconds = 0         #valid values any integer 0 or greater, or NULL; default is 0
   statement_timeout_in_seconds        = 172800    #valid values are 0 to 604800 (7 days); default is 172800 (2 days)
-  wait_for_provisioning               = true
   warehouse_size                      = "XSMALL"   #XSMALL|SMALL|MEDIUM|LARGE|XLARGE|XXLARGE|XXXLARGE|X4LARGE|X5LARGE|X6LARGE
   warehouse_type                      = "STANDARD" #STANDARD|SNOWPARK-OPTIMIZED
 }
@@ -80,7 +77,6 @@ resource "snowflake_warehouse" "prod_database_1_db_wh" {
   scaling_policy                      = "ECONOMY" #STANDARD|ECONOMY
   statement_queued_timeout_in_seconds = 0         #valid values any integer 0 or greater, or NULL; default is 0
   statement_timeout_in_seconds        = 172800    #valid values are 0 to 604800 (7 days); default is 172800 (2 days)
-  wait_for_provisioning               = true
   warehouse_size                      = "XSMALL"   #XSMALL|SMALL|MEDIUM|LARGE|XLARGE|XXLARGE|XXXLARGE|X4LARGE|X5LARGE|X6LARGE
   warehouse_type                      = "STANDARD" #STANDARD|SNOWPARK-OPTIMIZED
 }
@@ -102,7 +98,6 @@ resource "snowflake_warehouse" "debug_database_1_db_wh" {
   scaling_policy                      = "ECONOMY" #STANDARD|ECONOMY
   statement_queued_timeout_in_seconds = 0         #valid values any integer 0 or greater, or NULL; default is 0
   statement_timeout_in_seconds        = 172800    #valid values are 0 to 604800 (7 days); default is 172800 (2 days)
-  wait_for_provisioning               = true
   warehouse_size                      = "XSMALL"   #XSMALL|SMALL|MEDIUM|LARGE|XLARGE|XXLARGE|XXXLARGE|X4LARGE|X5LARGE|X6LARGE
   warehouse_type                      = "STANDARD" #STANDARD|SNOWPARK-OPTIMIZED
 }

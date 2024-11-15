@@ -6,8 +6,8 @@ resource "snowflake_resource_monitor" "dba_wh_rm" {
   end_timestamp              = null
   frequency                  = "DAILY" #valid values are MONTHLY|DAILY|WEEKLY|YEARLY|NEVER
   notify_triggers            = [80, 85, 90, 95]
-  suspend_triggers           = [100]
-  suspend_immediate_triggers = [105, 110]
+  suspend_trigger           = 100
+  suspend_immediate_trigger = 110
   #notify_users = []
 }
 resource "snowflake_resource_monitor" "dev_database_1_db_wh_rm" {
@@ -19,8 +19,8 @@ resource "snowflake_resource_monitor" "dev_database_1_db_wh_rm" {
   end_timestamp              = null
   frequency                  = "DAILY" #valid values are MONTHLY|DAILY|WEEKLY|YEARLY|NEVER
   notify_triggers            = [80, 85, 90, 95]
-  suspend_triggers           = [100]
-  suspend_immediate_triggers = [105, 110]
+  suspend_trigger           = 100
+  suspend_immediate_trigger = 110
   #notify_users = []
 }
 #
@@ -33,8 +33,8 @@ resource "snowflake_resource_monitor" "qa_database_1_db_wh_rm" {
   end_timestamp              = null
   frequency                  = "DAILY" #valid values are MONTHLY|DAILY|WEEKLY|YEARLY|NEVER
   notify_triggers            = [80, 85, 90, 95]
-  suspend_triggers           = [100]
-  suspend_immediate_triggers = [105, 110]
+  suspend_trigger           = 100
+  suspend_immediate_trigger = 110
   #notify_users = []
 }
 #
@@ -47,8 +47,8 @@ resource "snowflake_resource_monitor" "prod_database_1_db_wh_rm" {
   end_timestamp              = null
   frequency                  = "DAILY" #valid values are MONTHLY|DAILY|WEEKLY|YEARLY|NEVER
   notify_triggers            = [80, 85, 90, 95]
-  suspend_triggers           = [100]
-  suspend_immediate_triggers = [105, 110]
+  suspend_trigger           = 100
+  suspend_immediate_trigger = 110
   #notify_users = []
 }
 #
@@ -61,8 +61,8 @@ resource "snowflake_resource_monitor" "debug_database_1_db_wh_rm" {
   end_timestamp              = null
   frequency                  = "DAILY" #valid values are MONTHLY|DAILY|WEEKLY|YEARLY|NEVER
   notify_triggers            = [80, 85, 90, 95]
-  suspend_triggers           = [100]
-  suspend_immediate_triggers = [105, 110]
+  suspend_trigger           = 100
+  suspend_immediate_trigger = 110
   #notify_users = []
 }
 #

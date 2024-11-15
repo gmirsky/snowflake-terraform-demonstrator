@@ -142,6 +142,3 @@ output "dev_user_01_id" {
   sensitive   = false
 }
 #
-# output "dev_database_1_db_schema_1_name" {
-#   value = snowflake_schema.dev_database_1_db_schema_1[0]
-# }
